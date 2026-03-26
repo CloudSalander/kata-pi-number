@@ -1,8 +1,23 @@
 <html>
-    
+<head>
+    <title>Welcome SPIng!</title>
+    <style>
+        #pi_number {
+            font-size:40px;
+            font-weight:bold;
+            font-family:'Courier New', Courier, monospace;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <p id="pi_number">
+    </p>
+</body>
 </html>
 <script>
     document.addEventListener('keydown', function(event) {
-        console.log("Pressed Key");
+        console.log(Math.PI);
+        document.getElementById('pi_number').innerText= Math.PI;
     });
 </script>
